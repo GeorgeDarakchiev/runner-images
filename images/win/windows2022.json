@@ -236,7 +236,8 @@
                 "{{ template_dir }}/../../../maui/Pipelines/InstallWorkloadsNet7.ps1"
             ],
             "elevated_user": "{{user `install_user`}}",
-            "elevated_password": "{{user `install_password`}}"
+            "elevated_password": "{{user `install_password`}}",
+            "remote_path": "C:/Windows/Temp/"
         },
         {
             "type": "windows-restart",
