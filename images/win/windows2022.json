@@ -222,12 +222,12 @@
         {
             "type": "file",
             "source": "{{ template_dir }}/../../../maui/Pipelines/net6-workloads-versions.json",
-            "destination": "C:/Windows/Temp"
+            "destination": "C:/Windows/Temp/"
         },
         {
             "type": "file",
             "source": "{{ template_dir }}/../../../maui/Pipelines/net7-workloads-versions.json",
-            "destination": "C:/Windows/Temp"
+            "destination": "C:/Windows/Temp/"
         },
         {
             "type": "powershell",
