@@ -180,6 +180,19 @@
         },
         {
             "type": "powershell",
+            "pause_before": "2m",
+            "scripts": [
+                "{{ template_dir }}/scripts/Installers/Install-Wix.ps1",
+                "{{ template_dir }}/scripts/Installers/Install-WDK.ps1",
+                "{{ template_dir }}/scripts/Installers/Install-Vsix.ps1",
+                "{{ template_dir }}/scripts/Installers/Install-CommonUtils.ps1",
+                "{{ template_dir }}/scripts/Installers/Install-JavaTools.ps1",
+                "{{ template_dir }}/scripts/Installers/Install-Kotlin.ps1",
+                "{{ template_dir }}/scripts/Installers/Install-OpenSSL.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
             "scripts": [
                 "{{ template_dir }}/scripts/Installers/Install-ServiceFabricSDK.ps1"
             ],
